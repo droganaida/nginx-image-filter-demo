@@ -2,19 +2,8 @@
 
 ### 1. Add the following line to /etc/apt/sources.list:
 
-eoan - your Ubuntu version (Codename)
-```
-deb http://nginx.org/packages/ubuntu/ eoan nginx
-```
-
-Check Ubuntu version
-```
-lsb_release -a
-```
-
-Open file:
-```
-sudo nano /etc/apt/sources.list
+```bash
+sudo add-apt-repository "deb http://nginx.org/packages/ubuntu/ $(lsb_release -s -c) nginx"
 ```
 
 ### 2. Install GPG key of the repository:
