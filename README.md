@@ -1,12 +1,14 @@
 ## How to install Image Filter module on Ubuntu
 
 ### 1. Add repository
-```bash
+```
 sudo add-apt-repository "deb http://nginx.org/packages/ubuntu/ $(lsb_release -s -c) nginx"
 ```
 
 **OR**
+
 **Add the following line to /etc/apt/sources.list:**
+
 eoan - your Ubuntu version (Codename)
 ```
 deb http://nginx.org/packages/ubuntu/ eoan nginx
@@ -20,6 +22,7 @@ lsb_release -a
 Open file:
 ```
 sudo nano /etc/apt/sources.list
+```
 
 ### 2. Install GPG key of the repository:
 ```
